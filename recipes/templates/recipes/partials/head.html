@@ -24,6 +24,11 @@
         body {
             font-size: 1.6rem;
             font-family: sans-serif;
+            background: #dbd7d7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .main-header-container {
@@ -33,6 +38,7 @@
         .container {
             max-width: 144rem;
             margin: 0 auto;
+            padding: 3rem;
         }
 
         .main-logo {
@@ -49,6 +55,46 @@
 
         .main-logo-icon {
             margin-right: 2rem;
+        }
+
+        .search-form {
+            border: .2rem solid #13141F;
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input, .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button:focus {
+            outline: #A52A2A;
+        }
+
+        .search-form:focus-within {
+            border-color: #A52A2A;
+            background: white;
+        }
+
+        .search-form:focus-within .search-button{
+            color: #A52A2A;
         }
     </style>
 </head>
